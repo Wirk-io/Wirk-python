@@ -38,22 +38,18 @@ class AppProjectReaderServiceModel(object):
         """
         self.swagger_types = {
             'app_name': 'str',
-            'app_project_state': 'int',
+            'app_project_state': 'str',
             'creation_date': 'datetime',
             'credit': 'int',
-            'has_instruction': 'bool',
-            'has_question_options': 'bool',
             'id_app': 'int',
             'id_app_project': 'int',
             'id_quality': 'int',
             'instruction': 'str',
             'nb_task_closed': 'int',
             'nb_total_task': 'int',
-            'qualities': 'list[QualityReaderServiceModel]',
             'quality_name': 'str',
             'question_options': 'list[str]',
             'title': 'str',
-            'title_question_options': 'str',
             'url_notification': 'str'
         }
 
@@ -62,19 +58,15 @@ class AppProjectReaderServiceModel(object):
             'app_project_state': 'AppProjectState',
             'creation_date': 'CreationDate',
             'credit': 'Credit',
-            'has_instruction': 'HasInstruction',
-            'has_question_options': 'HasQuestionOptions',
             'id_app': 'IdApp',
             'id_app_project': 'IdAppProject',
             'id_quality': 'IdQuality',
             'instruction': 'Instruction',
             'nb_task_closed': 'NbTaskClosed',
             'nb_total_task': 'NbTotalTask',
-            'qualities': 'Qualities',
             'quality_name': 'QualityName',
             'question_options': 'QuestionOptions',
             'title': 'Title',
-            'title_question_options': 'TitleQuestionOptions',
             'url_notification': 'UrlNotification'
         }
 
@@ -82,19 +74,15 @@ class AppProjectReaderServiceModel(object):
         self._app_project_state = None
         self._creation_date = None
         self._credit = None
-        self._has_instruction = None
-        self._has_question_options = None
         self._id_app = None
         self._id_app_project = None
         self._id_quality = None
         self._instruction = None
         self._nb_task_closed = None
         self._nb_total_task = None
-        self._qualities = None
         self._quality_name = None
         self._question_options = None
         self._title = None
-        self._title_question_options = None
         self._url_notification = None
 
     @property
@@ -126,7 +114,7 @@ class AppProjectReaderServiceModel(object):
 
 
         :return: The app_project_state of this AppProjectReaderServiceModel.
-        :rtype: int
+        :rtype: str
         """
         return self._app_project_state
 
@@ -137,7 +125,7 @@ class AppProjectReaderServiceModel(object):
 
 
         :param app_project_state: The app_project_state of this AppProjectReaderServiceModel.
-        :type: int
+        :type: str
         """
         self._app_project_state = app_project_state
 
@@ -184,50 +172,6 @@ class AppProjectReaderServiceModel(object):
         :type: int
         """
         self._credit = credit
-
-    @property
-    def has_instruction(self):
-        """
-        Gets the has_instruction of this AppProjectReaderServiceModel.
-
-
-        :return: The has_instruction of this AppProjectReaderServiceModel.
-        :rtype: bool
-        """
-        return self._has_instruction
-
-    @has_instruction.setter
-    def has_instruction(self, has_instruction):
-        """
-        Sets the has_instruction of this AppProjectReaderServiceModel.
-
-
-        :param has_instruction: The has_instruction of this AppProjectReaderServiceModel.
-        :type: bool
-        """
-        self._has_instruction = has_instruction
-
-    @property
-    def has_question_options(self):
-        """
-        Gets the has_question_options of this AppProjectReaderServiceModel.
-
-
-        :return: The has_question_options of this AppProjectReaderServiceModel.
-        :rtype: bool
-        """
-        return self._has_question_options
-
-    @has_question_options.setter
-    def has_question_options(self, has_question_options):
-        """
-        Sets the has_question_options of this AppProjectReaderServiceModel.
-
-
-        :param has_question_options: The has_question_options of this AppProjectReaderServiceModel.
-        :type: bool
-        """
-        self._has_question_options = has_question_options
 
     @property
     def id_app(self):
@@ -362,28 +306,6 @@ class AppProjectReaderServiceModel(object):
         self._nb_total_task = nb_total_task
 
     @property
-    def qualities(self):
-        """
-        Gets the qualities of this AppProjectReaderServiceModel.
-
-
-        :return: The qualities of this AppProjectReaderServiceModel.
-        :rtype: list[QualityReaderServiceModel]
-        """
-        return self._qualities
-
-    @qualities.setter
-    def qualities(self, qualities):
-        """
-        Sets the qualities of this AppProjectReaderServiceModel.
-
-
-        :param qualities: The qualities of this AppProjectReaderServiceModel.
-        :type: list[QualityReaderServiceModel]
-        """
-        self._qualities = qualities
-
-    @property
     def quality_name(self):
         """
         Gets the quality_name of this AppProjectReaderServiceModel.
@@ -448,28 +370,6 @@ class AppProjectReaderServiceModel(object):
         :type: str
         """
         self._title = title
-
-    @property
-    def title_question_options(self):
-        """
-        Gets the title_question_options of this AppProjectReaderServiceModel.
-
-
-        :return: The title_question_options of this AppProjectReaderServiceModel.
-        :rtype: str
-        """
-        return self._title_question_options
-
-    @title_question_options.setter
-    def title_question_options(self, title_question_options):
-        """
-        Sets the title_question_options of this AppProjectReaderServiceModel.
-
-
-        :param title_question_options: The title_question_options of this AppProjectReaderServiceModel.
-        :type: str
-        """
-        self._title_question_options = title_question_options
 
     @property
     def url_notification(self):

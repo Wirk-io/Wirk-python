@@ -21,14 +21,14 @@ setup(
     name=NAME,
     version=VERSION,
     description="Wirk",
-    author_email="",
+    author_email="contact@wirk.io",
     url="",
     keywords=["Swagger", "Wirk"],
     install_requires=REQUIRES,
     packages=find_packages(),
     include_package_data=True,
     long_description="""\
-    API for api.wirk.io
+    &lt;p&gt;API for api.wirk.io&lt;/p&gt;
     """
 )
 
